@@ -1,0 +1,109 @@
+
+*{  
+    box-sizing: border-box;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+    color:white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin:40px;
+}
+
+div,header,footer{
+    border: 2px solid black;
+}
+div.container1,div.container2{
+    border: 0 ;
+    height: 120px;
+    padding:0px;
+    margin:0px;
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: stretch;
+}
+header,footer{
+    display: block;
+    height: 70px;
+    
+}
+#section1,#section2,#section3,#section4{
+    display: inline-block;
+    width: 21%;
+    padding: 30px;
+}
+#section5,#section6{
+    display: inline-block;
+    width:47%;
+    padding: 30px;
+}
+#section0{
+    height: 50px;
+    background-color:burlywood;
+}
+header{
+    background-color: rgba(0, 0, 255, 0.692);
+}
+#section1{
+    background-color: rgba(157, 195, 255, 0.356);
+}
+#section2{
+    background-color: rgba(0, 128, 0, 0.274);
+}
+#section3{
+    background-color: rgba(3, 165, 3, 0.562);
+}
+#section4{
+    background-color: lightgreen;
+}
+#section5{
+    background-color: rgba(29, 62, 170, 0.493);
+}
+#section6{
+    background-color: rgba(29, 62, 170, 0.651);
+}
+footer{
+    background-color: rgb(139, 202, 223);
+}
+@media (max-width: 600px){
+    /*mobile*/
+    #section0,#section1,#section2,#section3,#section4,#section5,#section6{
+        display: block;
+        width: 100%;
+        padding: 30px;
+        height: 70px;
+        margin:0.5%;
+    }
+    div.container1,div.container2{
+            display:block;
+            margin:0;
+            height:auto;
+            
+    }
+    header,footer{
+        height:70px;
+        width: 100%;
+        
+    }
+}
+@media (min-width: 601px) and (max-width:798px) {
+    /*tablet*/
+    div.container1,div.container2{
+        display:block;
+        margin:0;
+        height:auto;
+        width:auto;
+        
+    }
+    #section1,#section2,#section3,#section4{
+        width:47.5%;
+    }
+    #section5,#section6{
+        width: 97%;
+    }
+}

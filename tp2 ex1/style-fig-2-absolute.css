@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+.boxes{
+    position:absolute;
+}
+.boxes div{
+    width:200px;
+    height:200px;
+    border:5px solid purple;
+    
+    position:absolute;
+
+}
+.boxe1{
+    background-color: rgb(158, 194, 158);
+
+}
+.boxe2{
+    background-color:rgb(134, 204, 134);
+    top:200px;
+    margin-left: 200px;
+
+}
+.boxe3{
+    background-color:rgb(79, 128, 235);
+    top:400px;
+    margin-left: 400px;
+
+}
